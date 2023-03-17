@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>twitter.com</title>
+    <link rel="stylesheet" href="UI.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <i class="fab fa-twitter"></i>
+      <div class="sidebarOption active">
+        <span class="material-icons"> home </span>
+        <h2>Home</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> search </span>
+        <h2>Explore</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> notifications_none </span>
+        <h2>Notifications</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> mail_outline </span>
+        <h2>Messages</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> bookmark_border </span>
+        <h2>Bookmarks</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> list_alt </span>
+        <h2>Lists</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> perm_identity </span>
+        <h2>Profile</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> more_horiz </span>
+        <h2>More</h2>
+      </div>
+      <button class="sidebar__tweet">Tweet</button>
+    </div>
+    <!-- sidebar ends -->
+
+    <!-- feed starts -->
+    <div class="feed">
+      <div class="feed__header">
+        <h2>Home</h2>
+      </div>
+
+      <!-- tweetbox starts -->
+      <div class="tweetBox">
+        <form>
+          <div class="tweetbox__input">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLxwqQQC4ORzfsHz0uSkWMRZD8LtFERFiyuA&usqp=CAU"
+              alt=""
+            />
+            <input type="text" placeholder="What's happening?" />
+          </div>
+          <button class="tweetBox__tweetButton">Tweet</button>
+        </form>
+      </div>
+      <!-- tweetbox ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLxwqQQC4ORzfsHz0uSkWMRZD8LtFERFiyuA&usqp=CAU"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Arish kumar
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@arish</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Once upon a time.....
+                 there lived a gost.....
+              </p>
+            </div>
+          </div>
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> share</span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLxwqQQC4ORzfsHz0uSkWMRZD8LtFERFiyuA&usqp=CAU"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Aravindh
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@aravindh</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>The king is back</p>
+            </div>
+          </div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi4eFhfBrpf8TikAW8Csm2W7G7s6ovhEOxpA&usqp=CAU"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> share </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+    </div>
+    <!-- feed ends -->
+
+    <!-- widgets starts -->
+    <div class="widgets">
+      <div class="widgets__input">
+        <span class="material-icons widgets__searchIcon"> search </span>
+        <input type="text" placeholder="Search Twitter" />
+      </div>
+
+      <div class="widgets__widgetContainer">
+        <h3>Twitter explore</h3>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            <div>
+              <br>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTkdsTkyGogIAcaEUn0xaDXbQa3NbxNSs1qg&usqp=CAU" alt="">
+              <p>Welcome to Twitter! We're excited to have you join our community of millions of users from around the world. Get ready to connect with friends, discover new interests, and share your thoughts with the world. Happy tweeting!
+              </p>
+            </div><br>
+            <hr>
+            <div class="post__avatar">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLxwqQQC4ORzfsHz0uSkWMRZD8LtFERFiyuA&usqp=CAU" alt="">
+              <h3>
+                  Aswin
+                  <span class="post__headerSpecial"
+                    ><span class="material-icons post__badge"> verified </span>@aswin</span>
+                  
+                  <div class="post__headerDescription">
+                      <button class="follow">follow</button>
+                  </div>
+                </h3>
+                
+              </div>
+              
+
+              <br>
+            <hr>
+            <div class="post__avatar">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLxwqQQC4ORzfsHz0uSkWMRZD8LtFERFiyuA&usqp=CAU" alt="">
+              <h3>
+                  Bharath
+                  <span class="post__headerSpecial"
+                    ><span class="material-icons post__badge"> verified </span>@bharath</span>                  
+                  <div class="post__headerDescription"></div>
+                  <button class="follow">follow</button>
+              </div>
+                </h3>
+                
+              </div>
+              
+              
+
+            </div>
+            
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+    <!-- widgets ends -->
+  </body>
+</html>
